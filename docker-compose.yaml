@@ -1,0 +1,9 @@
+services:
+  db:
+    image: docker.io/postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=newsletter
+    ports:
+      - 5432:5432
